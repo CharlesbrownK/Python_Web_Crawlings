@@ -9,7 +9,7 @@ driver = webdriver.Chrome()
 url1 = 'https://www.google.co.kr/imghp?hl=ko'
 driver.get(url1)
 
-driver.find_element_by_css_selector('.gLFyf.gsfi').send_keys('파이썬')
+driver.find_element_by_css_selector('.gLFyf.gsfi').send_keys('python')
 driver.find_element_by_css_selector('.gLFyf.gsfi').send_keys(Keys.ENTER)
 images = driver.find_elements_by_css_selector('.rg_i.Q4LuWd')
 
