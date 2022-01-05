@@ -6,12 +6,12 @@ with open("index.html", 'r', encoding = 'UTF-8') as f:
 ### 이쁘게 html 원시코드 출력
 print(doc.prettify())
 
-### html 태그 내용 변경
+### change html tag contents
 tag = doc.title
-tag.string = "김정훈"
+tag.string = "Charles Brown"
 print(tag.string)
 
-### change html tag content
+### find html tag content
 tags = doc.find("p") # print first one that is named 'p'
 print(tags)
 tags = doc.find_all("p") # print all of the 'p' tags
